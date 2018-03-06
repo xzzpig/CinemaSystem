@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.shumetheny.ticket_booking.activity.SeatActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/lightGray"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView_seat_movie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="MOVIE"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/textView_seat_movieInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="16dp"
+            android:text="1月5日 10:00 国语2D"
+            android:textSize="10sp"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_screen"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview_seat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/lightGray"
+        android:divider="@color/lightGray"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        tools:listitem="@layout/listview_item_seat"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/lightGray"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/ic_seat1"
+            android:drawablePadding="8dp"
+            android:text="可选"
+            android:layout_margin="8dp"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:enabled="false"
+            android:drawableLeft="@drawable/ic_seat2"
+            android:drawablePadding="8dp"
+            android:text="不可选"
+            android:layout_margin="8dp"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/ic_seat"
+            android:drawablePadding="8dp"
+            android:text="已选"
+            android:layout_margin="8dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="72dp">
+        <Button
+            android:id="@+id/button_seat_commit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="确认提交"
+            android:visibility="visible"
+            android:textSize="20dp"/>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightGray"/>
+    </LinearLayout>
+
+</LinearLayout>

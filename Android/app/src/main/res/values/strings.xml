@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">电影订票系统</string>
+    <string name="title_activity_users">UsersActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_regist">登录</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">手机</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">登录/注册r</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">手机号非法</string>
+    <string name="error_invalid_password">密码应6-10位</string>
+    <string name="error_incorrect_password">密码不正确</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>
